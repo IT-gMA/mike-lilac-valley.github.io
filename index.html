@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Lilac Valley Farm Stay</title> 
+
+        <meta name="author" content="Mike Doan">
+        <meta name="description" content="Farm stay website">
+        <meta name="keywords" content="farm stay, rustic, nature, alpaca">
+
+        <link rel="stylesheet" href="css/style.css">         
+        <link rel="icon" href="place-your-tab-icon-here.jpg"> 
+
+        <!--Imported fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@100;200;300;400&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/b593de632a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--NAVIGATION-->
+        <div class="nav">
+            <div class="nav_menu">
+                <!--Navigation buttons to take users to each section of the site-->
+                <a href="#about">About</a> 
+                <a href="#gallery">Gallery</a>
+                <a href="#booking">Booking</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <!--LOGO: circular logo that takes users back to the homepage-->
+            <a class="circle" id="home_button" href="#home">
+                <img src="images/lilacvalley_logo.PNG" alt="A logo of a barn">
+            </a>
+        </div>
+        
+
+        <!--MAIN CONTENT-->
+        <main id="main_content" role="main">
+            <!--Home-->
+            <section id="home">
+                <!--Homepage's cover image that sits at the top left of the page-->
+                <img class="cover_img" src="images/accomodation.jpg">
+
+                <!--Brief description of the farm stay, sits at the bottom right of the cover image-->
+                <div class="text_container">
+                    <p class="title">
+                        Immerse yourself in the serenity of Australia's nature
+                    </p>
+                    <p class="description">
+                        Lilac Valley Farm Stay is a simple,
+                        rustic farm stay accommodation
+                        in the hills of the Blue Mountains.
+                        The property is owned by Marina 
+                        Ye, a local interior designer who
+                        purchased the old rundown barn three years ago with a plan to
+                            renovate.
+                    </p>
+        
+                </div>
+            </section>
+       
+            <!--SECTION 1: About-->
+            <section id="about">
+                <img class="abt_img" src="images/sunset_img.jpg" alt="a picture of a desert">
+
+                <!--Brief description of the estate-->
+                <div class="abt_us_container">
+                        <p class="title">
+                            About us
+                        </p>
+                        <p class="abt_us_txt">
+                            After years of hard work, the property now features a beautifully restored, open plan, luxury barn house, on four acres of land home to sheep, chickens, ducks and one very friendly goat named Rosie. There is an outdoor plunge pool just off the back verandah, and a stunning cottage garden. The Lilac Valley Farm Stay has been incredibly popular on AirBnB, and was even featured in a handful of online articles
+                        </p>
+                        <a>Read more</a>
+                    </div>
+
+                <img class="icon" id="alpaca" src="images/alpaca_icon.png" alt="an illustration of an alpaca">
+
+                <!--Customer reviews on Lilac Valley experience-->
+               <div class="review_container">
+                    <p class="title">
+                        Here at Lilac Valley, we pride ourselves on the excellent service and friendliness consistently provided to our visitors
+                    </p>
+                    <p class="review_txt">
+                        5/5 “Lilac Valley Farm Stay a little gem in the wheatbelt. Spacious units, well appointed with everything that you would need for a short or long stay. Very clean and comfortable. Quiet & peaceful. Could not fault in any way and would not hesitate to stay at Lilac Valley’s again.”
+                        User: Limefish, Google review 2 months ago                     
+                    </p>
+                    <a>More reviews<br></a>
+                </div>
+            </section>
+                
+
+            <!--SECTION 2: Image gallery-->
+            <section id="gallery">
+                <!--Background element just to decorate the section-->
+                <div class="pic_container"></div>
+
+                <!--List of images-->
+                <img class="gallery_pic" id="pic1" src="images/accomodation2.jpg">
+                <img class="gallery_pic" id="pic2" src="images/wheat_field2.jpg" alt="an image of a wheat field">
+                <img class="gallery_pic" id="pic3" src="images/campfire.jpg" alt="a person setting up a camp fire">
+                <img class="gallery_pic" id="pic4" src="images/alpaca.jpg"  alt="a portrait shot of an alpaca">
+                <img class="gallery_pic" id="pic5" src="images/farm-stays-albany.jpeg" alt="front view of a house">
+                <img class="gallery_pic" id="pic6" src="images/chickens.png" alt="a group of chickens">
+                <img class="gallery_pic" id="pic7" src="images/cow_img.jpg" alt="a portrait of a cow">
+                <img class="gallery_pic" id="pic8" src="images/wheat_field.webp" alt="a field of wheats">
+                <!--End of image list-->
+
+                <!--view more button-->
+                <div class="circle">
+                    <a>View more</a>
+                </div>
+
+                <!--Brief description of the pictures, this text container stays at the top right corner-->
+                <div class="description_container">
+                    <p class="title">Gallery</p>
+                    <p class="description">
+                        Check out the majestic beauty of Lilac Valley captured by professional photographers and<br>
+                        our past visitors.
+                    </p>
+                </div>
+                <img class="icon" id="woods" src="images/log_icon.png" alt="a stack of 3 blocks of wood">
+            </section>
+
+            <!--SECTION 3: Booking-->
+            <section id="booking">
+                <div class="form_container">
+                    <p class="title">Book now</p>
+
+                    <!--The actual form contains user inputs to be filled in-->
+                    <div class="booking_form">
+                        <!--Text input fields for customers personal information-->
+                        <label for="name">Full name</label><br>
+                        <input type="text" id="name" name="name"><br>
+
+                        <label for="phone">Phone number</label><br>
+                        <input type="text" id="phone" name="phone"><br>
+
+                        <label for="mail">Mail</label><br>
+                        <input type="text" id="mail" name="mail"><br>
+
+                        <label for="address">Address line</label><br>
+                        <input type="text" id="address" name="address"><br><br>
+                    </div>
+                </div>
+
+                <!--Small circular menu contains other booking related options-->
+                <div class="circle" id="booking_option_container">
+                    <img id="chicken_icon" src="images/chicken_icon.png">
+
+                    <!--Other related options-->
+                    <a>FAQ</a>
+                    <a>Enquiries</a>
+                    <a>Accommodations</a>
+                    <a>Payment</a>
+                </div>
+
+                <!--Calendar for the users to select a booking date-->
+                <div class="calendar_container">
+                    <!--displace the days of 1 month to book from-->
+                    <img id="calendar" src="images/booking_calendar.png">
+                    <p class="title">Date</p>
+                    <!--Buttons that allow the users to view next and previous months-->
+                    <i class="fa-solid fa-caret-left" id="left_arrow"></i>
+                    <i class="fa-solid fa-caret-right" id="right_arrow"></i>
+                </div>
+
+                <div class="circle" id="confirm_button">
+                    <a>Confirm</a>
+                </div>
+
+                <!--Decorative icon stays on the top left of this container-->
+                <img id="wheat_icon" src="images/wheats.png" alt="a group of wheats">
+            </section>
+
+            <!--SECTION 4-->
+            <section id="contact">
+                <img class="background" src="images/lilacvalley_logo.PNG" alt="a logo illustrating a barn">
+
+                <div class="contact_info_container">
+                    <p class="title">Get in touch</p>
+                    <p>Location:</p>
+                    <a>02 Lilac Valley Farm Stay, Somewhere, NSW<br>6043</a>
+                    <p>Phone number:</p>
+                    <a>(+61) 000 000 000</a>
+                    <p>Email:</p>
+                    <a>lilacvalleyft@gmail.com</a><br>
+                    <a>lvalleyfarmst@outlook.com</a>
+                    <p id="social_txt">Social media:</p>
+                    <!--Different social media platform icons from FontAwesome-->
+                    <i class="fa-brands fa-twitter-square"></i>
+                    <i class="fa-brands fa-instagram-square"></i>
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-airbnb"></i>
+                </div>
+
+                <!--Show location of Lilac Valley farm stay-->
+                <img class="map" src="images/nsw_map.png" alt="a map of NSW region">
+                <!--Decorative icon-->
+                <img class="cow_icon" src="images/cow_icon.png" alt="an illustration of a cow">
+            </section>
+            
+        </main>
+        <!--MAIN CONTENT ENDS-->
+        
+        <!--FOOTER-->
+        <footer>
+            <p>02 Lilac Valley Farm Stay, Somewhere, NSW 6043</p>
+            <p>(+61) 000 000 000</p>
+            <p>lilacvalleyft@gmail.com</p>
+            <p>lvalleyfarmst@outlook.com</p>
+            <p>Connect with us on social media:</p>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-airbnb"></i>
+        </footer>
+        <!--CONTACT FORM OR TEXT-->
+        <!--SOCIAL MEDIA ?-->
+    </body> 
+</html>

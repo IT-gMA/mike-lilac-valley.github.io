@@ -1,0 +1,1986 @@
+/* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
+    /* some basic css resetting */
+    body {
+        margin: 0; box-sizing: border-box; 
+        background-color: #f4e2c1;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+       }
+       
+   a { 
+       text-decoration: none; 
+       color:white; 
+       font-weight: normal;
+   }
+
+    .title{
+        font-family: 'Lora', serif;
+        font-weight: bold;
+    }
+   
+   section{
+       position: relative;
+       min-height: fit-content;
+       max-width: 100vw;
+       width: 100vw;
+   }
+   
+   /*============NAVIGATION============*/
+   /*==========LOGO============= */
+   .circle{
+       /*a div that contains Lilac Valley logo image*/
+       position: fixed; /*make the position of navigation element persist throughout the webpage*/
+       z-index: 2;      /*home button/logo sits in front of the navigation menu*/
+   
+       /*frosted glass effect*/
+       background-color: rgba(225, 167, 91, 0.75);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+       box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+   
+       border-radius: 50%;
+       display: block;
+       text-align: center;
+   }
+   
+   /*==============NAVIGATION===============*/
+   .nav_menu{
+       position: fixed;
+       z-index: 1;
+       margin: auto;
+   
+       /*frosted glass effect*/
+       background-color: rgba(212, 113, 63, 0.65);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(12px);
+       -webkit-backdrop-filter: blur(12px);
+   
+       display: flex;
+       justify-content: center;
+   }
+   
+   /*=============MAIN BODY CONTENT=============*/
+   #main{
+       display: flex;
+       flex-direction: column;
+   }
+   /*=================HOMEPAGE=====================*/
+   #home div, #home img{
+       position: absolute;
+   }
+   
+   .cover_img{
+       height: auto;    /*keep the image's original aspect ratio while resizing just the width*/
+       /*Create depth to the image with shadow of 10px vertical offset and 20px blur*/
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+       -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+   }
+   
+   .text_container{
+       /*align the inner text in the centre vertically*/
+       display: flex;
+       flex-direction: column;
+       height: fit-content;
+   
+       /*frosted glass effect*/
+       background-color: rgba(199, 96, 27, 0.7);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+   }
+
+   
+   /*===========SECTION 1 STYLING (ABOUT)=============*/
+   #about{
+       display: flex;
+       justify-content: center;
+   }
+   
+   .icon{
+       /*illustrated iconography*/
+       position: absolute;
+   }
+   
+   #about div{
+       /*text containers*/
+       position: absolute;
+       text-align: center;
+   }
+   
+   .abt_us_container{
+       /*frosted glass effect*/
+       background-color: rgba(215, 90, 26, 0.45);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(8px);
+       -webkit-backdrop-filter: blur(8px);
+   
+       border-radius: 50%;   /*make this text container a circle*/ 
+   }
+   
+   .abt_us_container a, .review_container a{
+       color: #1b1b1b;  /*contrasting colour to differentiate anchor texts from regular texts*/
+   }
+   
+   .review_container{
+        height: fit-content;
+
+       /*frosted glass effect*/
+       background-color: rgba(199, 96, 27, 0.7);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+   }
+   
+   .review_container .title{
+       font-family: 'Pacifico', cursive;
+   }
+   
+   .abt_img{
+       /*Background image for the About section*/
+       max-width:100%;
+       max-height:100%;
+   }
+   
+   .abt_img{
+       /*give the cover image of the about section shadow*/
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+       -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+   }
+   
+   /*==========SECTION 2 STYLING (GALLERY)=============*/
+   #gallery{
+       display: flex;
+       justify-content: center;
+   }
+   
+   #gallery div{
+       position: absolute;
+   }
+   
+   #gallery .description_container{
+       right: 0;    /*Pin this text container to the very right of the screen*/
+   
+       /*frosted glass effect*/
+       background-color: rgba(186, 52, 47, 0.7);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+   }
+   
+   #gallery .icon{
+       /*The wood icon that sits below the gallery description text container*/
+       height: auto;
+       right: 0;
+   }
+   
+   .pic_container{
+       /*background filler*/
+       background-color: rgba(253, 241, 234, 0.46);
+       border: solid rgb(164, 124, 45, 0.7);
+   }
+   
+   .gallery_pic{
+       position: absolute;
+   }
+   
+   .gallery_pic{
+       box-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+       -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+   }
+   
+   #gallery .circle{
+       /*click-to-view-more button, given a circular shape*/
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       z-index: unset;
+   }
+   
+   /* ==========SECTION 3 STYLING (BOOKING)============= */
+   #booking{
+       display: flex;
+       justify-content: center;
+   }
+   
+   #booking p{
+       position: absolute;
+       color: black;    /*give the texts here contrast colour to the containing booking form background's colour*/
+   }
+   
+   #booking div{
+       position: absolute;
+   }
+   
+   .form_container{
+       /*the main booking form*/
+       background-color: #e69868;
+       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.40);
+       -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.40);
+   }
+   
+   .booking_form label{
+       color: black;
+   }
+   
+   /*user input fields*/
+   input[type=text]{
+       width: 99%;
+       display: inline-block;
+       border: 1px solid #f4e2c1;
+       box-sizing: border-box;
+       background: transparent;
+       font-family: 'Montserrat', sans-serif;
+       outline: none;
+   }
+   
+   .calendar_container{
+       display: flex;
+       justify-content: center;
+   
+       /*frosted glass effect*/
+       background-color: rgba(255, 255, 255, 0.65);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+   }
+   
+   #calendar{
+       border-radius: 1vw;
+   }
+   
+   .calendar_container i{
+       position: absolute;
+       color: black;
+   }
+   
+   #booking .circle{
+       /*confirm button*/
+       display: flex;
+       flex-direction: column;
+       z-index: unset;
+   }
+   
+   #booking_option_container{
+       background-color: #f4e2c1;
+   
+       /*Inner shadow for this container sop it looks like the form is floating*/
+       box-shadow: inset 0px -4px 15px rgba(0, 0, 0, 0.4);
+       -webkit-box-shadow: inset 0px -4px 15px rgba(0, 0, 0, 0.4);
+   }
+   
+   #chicken_icon{
+       position: absolute;
+       height: auto;
+       max-height: unset;
+   }
+   
+   #confirm_button{
+       justify-content: center;
+       /*frosted glass effect*/
+       background-color: rgba(186, 52, 47, 0.62);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+   
+       /*shadow*/
+       box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+       -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+   }
+   
+   #booking_option_container a, #confirm_button a{
+       color: black;
+   }
+   
+   #wheat_icon{
+       position: absolute;
+       height: auto;
+   }
+   
+   
+   /* ==========SECTION 4 STYLING (CONTACT)============= */
+   #contact{
+       display: flex;
+       justify-content: center;
+   }
+   
+   #contact img, #contact div{
+       position: absolute;
+   }
+   
+   .contact_info_container{
+       display: block;
+   
+       /*frosted glass effect*/
+       background-color: rgba(237, 175, 102, 0.75);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+   }
+   
+   #contact a{
+       font-weight: normal;
+   }
+   
+   .map{
+       height: auto;
+       border-radius: 1.2vw;
+   
+       /*add some shadow*/
+       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+       -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+   }
+
+   .cow_icon{
+       height: auto;
+   }
+   
+   
+   /* ==========FOOTER STYLIING============= */
+   footer{
+        background-color: rgba(186, 52, 47);
+        /*height: fit-content;*/
+   }
+   
+   /*===============ANIMATIONS================*/
+   /*==============Anchor texts==============*/
+    a:hover{
+        font-weight: bold;
+    }
+    
+    a:active, a::after, a:focus, a:target, a:visited{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    a.active{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+   
+   /*=================Circular buttons================*/
+   #home_button:hover, #gallery .circle:hover{
+       /*frosted glass effect*/
+       background-color: rgba(225, 167, 91, 0.65);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(11px);
+       -webkit-backdrop-filter: blur(11px);
+   }
+   
+   #home_button:active, #gallery .circle:active{
+       /*frosted glass effect*/
+       background-color: rgba(225, 167, 91, 0.60);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(12px);
+       -webkit-backdrop-filter: blur(12px);
+   
+       /*shadow*/
+       box-shadow: 0 0px 15px rgba(0, 0, 0, 0.14);
+       -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.14);
+   }
+   
+   #confirm_button:hover{
+       /*frosted glass effect*/
+       background-color: rgba(186, 52, 47, 0.55);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(11px);
+       -webkit-backdrop-filter: blur(11px);
+   }
+   
+   #confirm_button:active{
+       /*frosted glass effect*/
+       background-color: rgba(186, 52, 47, 0.48);
+       /*make sure it works on safari and chrome*/
+       backdrop-filter: blur(12px);
+       -webkit-backdrop-filter: blur(12px);
+   
+       /*shadow*/
+       box-shadow: 0 0px 15px rgba(0, 0, 0, 0.14);
+       -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.14);
+   }
+   
+   /*===============Arrow buttons======================*/
+   .calendar_container i:hover{
+       color: rgb(91, 51, 33);
+   }
+   
+   /*===========Social media icon buttons==============*/
+   .contact_info_container i:hover{
+       color: rgb(255, 240, 201);
+   }
+
+    .contact_info_container i:active{
+        color: rgb(246, 203, 170);
+    }
+   
+   
+   /*====================Containers====================*/
+   .nav_menu:hover{
+        background-color: rgba(212, 113, 63, 0.70);
+   }
+   
+   .abt_us_container:hover, .text_container:hover, .review_container:hover{
+       background-color: rgba(199, 96, 27, 0.80);
+   }
+   
+   #gallery .description_container:hover{
+       background-color: rgba(186, 52, 47, 0.80);
+   }
+   
+   .calendar_container:hover{
+       background-color: rgba(255, 255, 255, 0.80);
+   }
+   
+   .contact_info_container:hover{
+       background-color: rgba(237, 175, 102, 0.83);
+   }
+   
+   .gallery_pic:hover{
+       box-shadow: 0 1px 8px rgba(0, 0, 0, 0.65);
+       -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.65);
+   }
+   
+   
+   /* ==========RESPONSIVE DESIGN============= */
+   
+   /* ===== 5K RETINA MAC LABS: Media queries for Curtin Uni mac lab testing only ===== */
+   @media only screen and (max-width: 5120px) {
+        .circle{
+            width: 7vw;
+            height: 7vw;
+        }
+
+        .title{
+            font-size: 2vw;
+        }
+
+        section{
+            height: 100vw;
+        }
+
+
+        /*===================NAVIGATION================*/
+        #home_button{
+            /*give the circular home button that contains the logo a fixed dimension so it does not extend infinitely to adapt to wider screen*/
+            width: 140px;
+            height: 140px;
+
+            transform: translate(330%, 12%);
+        }
+
+        .circle img{
+            margin-top: 16px;   /*align the Lilac Valley logo vertically*/
+            width: 105px;
+            height: 105px;
+        }
+
+        .nav_menu{
+            /*give the navigation menu a fixed width and height so it does not extend infinitely, making the anchor texts more sparse*/
+            border-bottom-left-radius: 42px;
+            border-bottom-right-radius: 42px;
+            width: 900px;
+            height: 96px;
+
+            transform: translate(55%, 0%);
+        }
+
+        .nav_menu a{
+            font-size: x-large;
+            margin: 36px 40px 0px 35px;
+        }
+
+        /* ==========MAIN BODY CONTENT============= */
+        /*=================HOME=====================*/
+        .cover_img{
+            width: 78vw;
+            /*min-width: 1150px;*/
+
+            border-bottom-right-radius: 1.8vw;
+            border-top-right-radius: 1.8vw;
+
+            transform: translate(0, 0.8vw);
+        }
+
+        .text_container{
+            border-radius: 2.6vw;
+            height: 30vw;
+            width: 18vw;
+            padding: 0.25vw 1.6vw;  /*give the inner text more whitespace*/
+
+            transform: translate(68vw, 27.2vw);
+        }
+
+        .text_container .title, .text_container p{
+            margin: unset;
+        }
+
+        .text_container .title{
+            font-size: 2.3vw;
+            padding-top: 2.2vw;
+            padding-bottom: 1.2vw;
+            padding-right: 1.8vw;
+        }
+
+        .text_container p{
+            font-size: 1.02vw;
+            padding-bottom: 2vw;
+        }
+
+
+        /*==================ABOUT==================== */
+        .abt_img{
+            transform: translate(0, 15vw);  /*slight shift the background image down*/
+            border-radius: 2.3vw;   /*give it rounded corners*/
+            width: 60vw;
+            height: 45vw;
+        }
+
+        #about .icon{
+            /*the alpaca icon*/
+            width: 12vw;
+            height: 12vw;
+            transform: translate(20vw, 7.3vw);  /*shift it to the top right of the background image*/
+        }
+
+        .abt_us_container{
+            transform: translate(-28vw, 8vw);   /*shift this text container to the top left of the background image*/
+            width: 25vw;
+            height: 25vw;
+        }
+
+        .abt_us_txt, .review_txt{
+            font-size: 0.95vw;
+        }
+        
+        .abt_us_txt{
+            padding: 1vw 2.5vw;
+        }
+
+        .abt_us_container .title{
+            padding: 0px 0px;
+        }
+
+        #about a{
+            font-size: 0.9vw;
+        }
+    
+        .review_container{
+            width: 30vw;
+            border-radius: 2.5vw;   /*give it rounded corners*/
+            padding: 0.5vw 0.8vw;
+
+            transform: translate(24vw, 50vw);   /*shift this text container to the bottom right of the background image*/
+        }
+
+        .review_txt{
+            padding: 0.1vw 2vw;
+        }
+
+        .review_container .title{
+            padding: 0.1vw 1.2vw;
+            font-size: 1.4vw;
+        }
+
+        /*==================GALLERY===================*/
+        #gallery{
+            height: 110vw;  /*slight taller gallery section to contains more images*/
+        }
+
+        #gallery .description_container{
+            border-top-left-radius: 7vw;
+            border-bottom-left-radius: 7vw;
+            height: 15vw;
+            width: 28vw;
+
+            transform: translate(0, 5vw);   /*slightly shift it down from top right*/
+        }
+
+        .description_container p{
+            font-size: 0.9vw;
+            padding: 0vw 2.5vw 0vw 3.5vw;   /*shift this text in such a way that it does not overlap with the log icon*/
+        }
+
+        .description_container .title{
+            font-size: 2vw;
+            padding-top: 1.5vw;
+        }
+
+        #gallery .icon{
+            width: 11vw;
+            transform: translate(0.2vw, 17vw);  /*shift this icon in such a way that it does not overlap with the texts*/
+        }
+        
+        .pic_container{
+            /*centre background*/
+            width: 80vw;
+            height: 88vw;
+
+            border-width: 0.9vw;
+            border-radius: 9vw;
+
+            transform: translate(0, 11vw);
+        }
+
+        .gallery_pic{
+            height: auto;
+            border-radius: 1vw; /*give each picture slight rounded corners*/
+        }
+
+        #pic1{
+            width: 40vw;
+            transform: translate(-15vw, 10vw);
+        }
+
+        #pic2, #pic3{
+            width: 24vw;
+            transform: translate(20vw, 8vw);
+        }
+
+        #pic3{
+            transform: translate(-30vw, 34vw);
+        }
+
+        #pic4{
+            width: 21vw;
+            transform: translate(-5vw, 40vw);
+        }
+
+        #pic5{
+            width: 31vw;
+            transform: translate(25vw, 43vw);
+        }
+
+        #pic6, #pic8{
+            width: 700px;
+            border-radius: 18.5px;
+            height: auto;
+        }
+
+        #pic6{
+            width: 32vw;
+            transform: translate(-25vw, 73vw); 
+        }
+
+        #pic7{
+            width: 19vw;
+            transform: translate(2vw, 68vw); 
+        }
+
+        #pic8{
+            width: 29vw;
+            transform: translate(28vw, 70vw);
+        }
+
+        /*=========Picture on hover animations============*/
+        /*slightly enlarge these pictures upon hover*/
+        #pic1:hover{
+            width: 40.5vw;
+        }
+
+        #pic2:hover, #pic3:hover{
+            width: 24.5vw;
+        }
+
+        #pic4:hover{
+            height: 21.5vw;
+        }
+
+        #pic5:hover{
+            width: 31.5vw;
+        }
+
+        #pic6:hover{
+            width: 32.5vw;
+        }
+
+        #pic7:hover{
+            width: 19.5vw;
+        }
+
+        #pic8:hover{
+            width: 29.5vw;
+        }
+
+        /*view-more-button*/
+        #gallery .circle{
+            transform: translate(-25vw, 96vw);
+        }
+
+
+        /*===================BOOKING=====================*/
+        .form_container{
+            /*main container that consists of the booking form and booking option container*/
+            border-radius: 18vw;
+            width: 100vw;
+            height: 70vw;
+
+            transform: translate(-4%, 20vw);    /*shift this container to the far left*/
+        }
+
+        .form_container .title, .calendar_container .title, .calendar_container i{
+            font-size: 3vw;
+        }
+
+        #booking_option_container a, input[type=text], .booking_form label, #confirm_button a{
+            font-size: 1.05vw;
+        }
+
+        .form_container .title{
+            /*place the "Book now" text at top left of the form container*/
+            margin-top: 8vw;
+            margin-left: 12%;
+        }
+
+        .booking_form label{
+            /*annotate the category for its corresponding user input field*/
+            padding-left: 1vw;
+        }
+
+        input[type=text]{
+            padding: 0vw 1.2vw;
+            margin-bottom: 2.4vw;
+            margin-top: 0.8vw;
+
+            border-radius: 0.6vw;
+            height: 4vw;
+        }
+
+        .booking_form{
+            /*contains user input fields, takes up nearly half the width of the main form container*/
+            width: 43vw;
+            height: fit-content;
+
+            /*place it at the left side of form container, sits below the "Book now" text*/
+            margin-top: 20vw;
+            margin-left: 10%;
+        }
+
+        .calendar_container{
+            border-radius: 4.8vw;
+            width: 45vw;
+            height: 38vw;
+            
+            transform: translate(28vw, 7vw);    /*place it at the top right of the Booking section*/
+        }
+
+        #calendar{
+            height: 75%;
+            transform: translate(0, 8vw);   /*shift down slightly to make room for the "Date" text and prev, next buttons*/
+        }
+
+        .calendar_container .title{
+            transform: translate(-14vw, -1vw);  /*"Date" text sits at top left of the calendar container*/
+        }
+
+        /*for going to the next and previous months*/
+        #right_arrow{
+            transform: translate(14vw, 2vw);
+        }
+        #left_arrow{
+            transform: translate(9vw, 2vw);
+        }
+
+        #booking_option_container{
+            width: 28vw;
+            height: 28vw;
+
+            transform: translate(25vw, 52vw);   /*sits at the right to the booking form*/
+        }
+
+        #chicken_icon{
+            width: 9vw;
+            transform: translate(10vw, 17vw);   /*positioned below the option anchor texts*/
+        }
+
+        #booking_option_container a{
+            /*4 different booking related options, each sits on top of another*/
+            padding: 1.4vw 0vw;
+        }
+
+        #wheat_icon{
+            width: 11vw;
+            transform: translate(-18vw, 12vw);  /*positioned on top the form container, to the left of calendar container*/
+        }
+
+        #confirm_button{
+            transform: translate(-28vw, 86vw);  /*positioned below the booking form*/
+        }
+
+       /*==================CONTACT=====================*/
+        #contact .background{
+            /*use Lilac Valley logo as background for the contact info container*/
+            width: 30vw;
+            transform: translate(-20vw, 30vw);
+        }
+
+        .contact_info_container{
+            height: 54vw;
+            width: 48vw;
+            border-radius: 4.5vw;
+
+            transform: translate(-22vw, 20vw);  /*positioned on the left of the Contact section*/   
+            padding-left: 3vw;   
+        }
+
+        .contact_info_container p, .contact_info_container a{
+            font-size: 1.2vw;
+        }
+
+        .contact_info_container .title{
+            /*"Get in touch" text*/
+            font-size: 2.5vw;
+            padding: 1vw 0vw;
+        }
+
+        .contact_info_container p{
+            margin-top: 1vw;
+        }
+
+        #social_txt{
+            /*"Social media" text*/
+            padding-top: 3.5vw;
+        }
+
+        .contact_info_container i{
+            /*the social media platform icons placed inline, sit below the "Social media" text*/
+            font-size: 4vw;
+            padding-top: 0.8vw;
+            padding-right: 0.68vw;
+        }
+
+        .map{
+            width: 66vw;
+            transform: translate(19vw, 10vw);   /*place the map at the top right of the Booking section*/
+        }
+
+        .cow_icon{
+            width: 23vw;
+            transform: translate(2vw, 51vw);    /*place this icon below the map*/
+        }
+
+
+        /*================FOOTER===================*/
+        footer{
+            padding: 1vw 6vw;
+        }
+
+        footer p{
+            font-size: 1vw;
+        }
+
+        footer i{
+            font-size: 2.5vw;
+            padding-top: unset;
+            padding-right: 0.68vw;
+            padding-bottom: 3vw;
+            margin: unset;
+        }
+
+
+        /*================ANIMATIONS===============*/
+        .calendar_container i:active{
+            font-size: 3.5vw;
+        }
+   }
+   
+   /* ===== DESKTOP HD: Media queries for most HD desktops ===== */
+   @media only screen and (max-width: 1920px) {
+        .title{
+            font-size: xx-large;
+        }
+
+        /*fixed sized navigation elements*/
+        #home_button{
+            width: 120px;
+            height: 120px;
+
+            transform: translate(280%, 12%);
+        }
+    
+        .circle img{
+            margin-top: 14px;
+            width: 90px;
+            height: 90px;
+        }
+   
+       .nav_menu{
+           border-bottom-left-radius: 40px;
+           border-bottom-right-radius: 40px;
+           width: 610px;
+           height: 78px;
+           padding-left: 10px;
+
+           transform: translate(59.5%, 0%);
+       }
+   
+       .nav_menu a{
+           font-size: medium;
+           margin: 32px 25px 0px 25px;
+       }
+   
+       /* ==========MAIN BODY CONTENT============= */
+       /*=================HOME=====================*/
+       .text_container{
+           max-width: 330px;
+       }
+
+        .text_container p{
+            padding-bottom: 3vw;
+        }
+       
+       /*==================ABOUT====================*/
+       /*fixed sized elements for the About section*/
+       .abt_img{
+           transform: translate(0%, 44%);
+           border-radius: 30px;
+           width: 900px;
+           height: 680px;
+       }
+   
+       #about .icon{
+           width: 210px;
+           height: 210px;
+           transform: translate(130%, 78.5%);
+       }
+   
+       .abt_us_container{
+           transform: translate(-105%, 40%);
+           width: 380px;
+           height: 380px;
+       }
+       
+       .abt_us_txt{
+           padding: 5px 30px;
+           font-size: 14px;
+       }
+   
+       .abt_us_container .title{
+           padding: 0px 0px;
+       }
+   
+       #about a{
+           font-size: 13.6px;
+       }
+      
+       .review_container{
+           width: 496px;
+           border-radius: 46px;
+           padding: 12px 6px;
+   
+           transform: translate(80%, 240%);
+       }
+   
+       .review_txt{
+           padding: 4px 20px;
+           font-size: 14px;
+       }
+   
+       .review_container .title{
+           padding: 2px 15px;
+           font-size: 24px;
+       }
+   }
+   
+   /* ===== SMALL DESKTOP: Media queries for laptop/small desktop ===== */
+   @media only screen and (max-width: 1366px) { 
+       /*===================NAVIGATION====================*/
+       a, p{
+           font-size: 13px;
+       }
+
+        .title{
+            font-size: 30px;
+        }
+   
+       #home_button{
+           transform: translate(240%, 12%);
+   
+           width: 100px;
+           height: 100px;
+       }
+   
+       .circle img{
+           margin-top: 12px;
+           width: 75px;
+           height: 75px;
+       }
+   
+       .nav_menu{
+            width: 420px;
+            height: 70px;
+            padding: 0px 32px;
+            border-bottom-left-radius: 36px;
+            border-bottom-right-radius: 36px;
+            padding-left: 70px;
+
+           transform: translate(50%, 0%);
+       }
+   
+       .nav_menu a{
+           margin: 30px 20px 0px 20px;
+       }
+   
+   
+       /*==============HOME=================*/
+        #home .cover_img{
+            width: 82vw;
+            min-width: 800px;
+            max-width: 1160px;
+        }
+
+        .text_container{
+            border-radius: 2.6vw;
+            height: 32vw;
+            width: 20vw;
+            padding: 0.2vw 2vw;
+
+            transform: translate(70vw, 30vw);
+        }
+
+        .text_container .title{
+            padding-top: 2vw;
+            padding-bottom: 1.5vw;
+        }
+
+        .text_container p{
+            padding-bottom: 1.4vw;
+        }
+   
+   
+       /*================ABOUT===================*/
+       .abt_img{
+           transform: translate(0%, 45%);
+           border-radius: 26px;
+           width: 800px;
+           height: 618px;
+       }
+
+       #about a, #about p{
+           font-size: 12.5px;
+       }
+
+        .abt_us_txt{
+            padding: 2px 25px;
+        }
+   
+       #about .abt_us_container .title{
+           font-size: 31px;
+       }
+   
+       #about .review_container .title{
+           padding: 1px 12px;
+           font-size: 18px;
+       }
+   
+       .abt_us_container{
+           transform: translate(-95%, 38%);
+           width: 340px;
+           height: 340px;
+       }
+
+       .review_container{
+           width: 420px;
+           border-radius: 38px;
+           padding: 7px 4px;
+   
+           transform: translate(68%, 270%);
+       }
+
+        .review_txt{
+            padding: 3px 12px;
+            font-size: 12.5px;
+        }
+
+        .review_container .title{
+            padding: 1px 10px;
+        }
+   
+       #about .icon{
+           width: 190px;
+           height: 190px;
+           transform: translate(128%, 83%);
+       }
+       
+       /*====================GALLERY====================*/
+       .gallery_pic{
+           border-radius: 0.6vw;
+       }
+   }
+   
+   /* ===== TABLET: Media queries for verticle and horizontal ===== */
+   @media only screen and (max-width: 1024px) { 
+       section{
+           min-height: 1000px;
+           /*Limit how long/tall a section can be (especially on large tablet on vertical mode)
+           to minimise how much the users have to scroll to reach another section*/
+           max-height: 1366px;
+       }
+   
+       .title{
+           font-size: 29px;
+       }
+
+       .circle{
+           width: 12vw;
+           height: 12vw;
+       }
+   
+       /*===================NAVIGATION====================*/
+       /*return to responsive sizing to adapt to various tablet screen sizes*/
+        #home_button{
+            width: 10vw;
+            height: 10vw;
+            transform: translate(18vw, 11%);
+        }
+
+        .circle img{
+            width: 7vw;
+            height: 7vw;
+            margin-top: 1.4vw;
+        }
+        
+        .nav_menu{
+            transform: translate(19vw, 0vw);
+            width: 40vw;
+            height: 7vw;
+            border-bottom-left-radius: 3.8vw;
+            border-bottom-right-radius: 3.8vw;
+
+            padding-left: 56px;
+            padding-right: 20px;
+        }
+
+        .nav_menu a{
+            font-size: 1.3vw;
+            margin: 2.4vw 1.2vw 0vh 2vw;
+        }
+   
+   
+       /*=====================HOME====================*/
+       #home .cover_img{
+           width: 97vw;
+           min-width: unset;
+           max-width: 1100px;
+           border-bottom-right-radius: 2.8vw;
+           border-top-right-radius: 2.8vw;
+
+           /*crop the left portion of the image slightly to allow for a taller image that fits better
+           with taller tablet, mobile screens without changing the original aspect ratio*/
+           transform: translate(-18%, 1.8vw);   
+       }
+
+        .text_container{
+            height: 32vw;
+            width: 20vw;
+            min-height: unset;
+            max-height: unset;
+            max-width: unset;
+            min-width: unset;
+            padding: 0.4vw 1.6vw;
+
+            transform: translate(68vw, 40vw);
+        }
+
+        /*Make font size progressively larger as the screen size gets smaller to mobile form factors
+        to improve readability*/
+        .text_container p{
+            padding-bottom: 1.25vw;
+        }
+
+        .text_container .title{
+            padding-top: 2.5vw;
+            padding-right: 2.7vw;
+            padding-bottom: 2vw;
+        }
+   
+   
+       /*===================ABOUT=====================*/
+       #about{
+           height: 140vh;
+       }
+   
+       .abt_img{
+           width: 60vw;
+           height: 60vw;
+           border-radius: 2.8vw;
+           transform: translate(0vw, 20vw);
+       }
+   
+       #about p, #about a{
+           font-size: 1.1vw;
+       }
+   
+       #about .abt_us_container .title{
+           font-size: 2.8vw;
+           padding-top: 3.2vw;
+       }
+   
+       .abt_us_container{
+           transform: translate(-30vw, 12vw);
+           width: 30vw;
+           height: 30vw;
+           padding: 0 0;
+       }
+
+       .abt_us_txt{
+           padding: unset;
+           font-size: unset;
+       }
+   
+       .abt_us_container p, .abt_us_container a{
+           padding: 2.2vw 1.8vw;
+           margin: unset;
+       }
+   
+       .review_container{
+           height: fit-content;
+           width: 36vw;
+           border-radius: 3vw;
+           padding: 0.6vw 1.2vw;
+   
+           transform: translate(26vw, 64vw);
+       }
+
+       .review_container a{
+           padding-bottom: 20px;
+       }
+   
+       #about .icon{
+           width: 14vw;
+           height: 14vw;
+
+           transform: translate(20vw, 11vw);
+       }
+   
+   
+       /*=========================GALLERY========================*/
+       #gallery{
+           height: 240vw;  /*longer to contains multiple images arranged in column order*/
+           max-height: unset;
+       }
+   
+       #gallery .description_container{
+           border-top-left-radius: 9vw;
+           border-bottom-left-radius: 9vw;
+           height: 18vw;
+           width: 36vw;
+   
+           transform: translate(1%, 11vw);
+       }
+   
+       #gallery .icon{
+           width: 14vw;
+           transform: translate(2%, 24vw);
+       }
+   
+       .description_container p{
+           padding: 0vh 4vw 0vh 3.8vw;
+           margin: 1vw 2vw;
+           font-size: 1.2vw;
+       }
+   
+       .description_container .title{
+           padding-top: 2.4vw;
+           font-size: 2.8vw;
+       }
+   
+       .pic_container{
+           width: 90vw;
+           height: 175vw;
+   
+           border-width: 1.5vw;
+           border-radius: 12.8vw;
+   
+           transform: translate(0%, 19vw);
+       }
+
+        .gallery_pic{
+            border-radius: 2vw;
+        }
+
+        #pic6, #pic7, #pic8{
+            /*Show less images for smaller sized screens*/
+            display: none;
+        }
+
+        #pic1{
+            width: 80vw;
+            transform: translate(0vw, 40%);
+        }
+
+        #pic2, #pic3{
+            width: 46vw;
+            transform: translate(-24vw, 110%);
+        }
+
+        #pic3{
+            transform: translate(25vw, 110%);
+        }
+
+        #pic4{
+            width: 34vw;
+            transform: translate(-30vw, 400%);
+        }
+
+        #pic5{
+            width: 58vw;
+            transform: translate(20vw, 400%);
+        }
+
+        /*=========Picture on hover animations============*/
+        #pic1:hover, #pic2:hover, #pic3:hover, #pic4:hover, #pic5:hover{
+            height: auto;
+        }
+
+        #pic1:hover{
+            width: 80.5vw;
+        }
+
+        #pic2:hover, #pic3:hover{
+            width: 46.2vw;
+        }
+
+        #pic4:hover{
+            width: 34.2vw;
+        }
+
+        #pic5:hover{
+            width: 58.5vw;
+        }
+    
+       /*View more pictures button*/
+       #gallery .circle{
+           transform: translate(-25vw, 190vw);
+       }
+
+       #gallery .circle a{
+           font-size: 1.4vw;
+       }
+   
+       /*===================BOOKING=====================*/
+        #booking{
+            height: 150vw;
+            max-height: unset;
+        }
+
+        .form_container{
+            border-radius: 20vw;
+            width: 100vw;
+            height: 90vw;
+
+            transform: translate(-4%, 20vw);
+        }
+
+        .form_container .title, .calendar_container .title, .calendar_container i{
+            font-size: 3vw;
+        }
+
+        .form_container .title{
+            margin-top: 8vw;
+            margin-left: 11%;
+        }
+
+        .booking_form label{
+            font-size: 1.56vw;
+            padding-left: 1vw;
+        }
+
+        input[type=text]{
+            padding: 0vw 1.5vw;
+            margin-bottom: 2.8vw;
+            margin-top: 0.8vw;
+
+            border-radius: 0.75vw;
+            height: 5.2vw;
+
+            /*font*/
+            font-size: 1.5vw;
+        }
+
+        .booking_form{
+            width: 50vw;
+            height: fit-content;
+
+            margin-top: 35vw;
+            margin-left: 11%;
+        }
+
+        .calendar_container{
+            border-radius: 5.6vw;
+            width: 48vw;
+            height: 44vw;
+            
+            transform: translate(26vw, 9vw);
+        }
+
+        #calendar{
+            height: 72%;
+        }
+
+        .calendar_container .title{
+            transform: translate(-18vw, -1vw);
+        }
+
+        #right_arrow{
+            transform: translate(14vw, 2vw);
+        }
+
+        #left_arrow{
+            transform: translate(9vw, 2vw);
+        }
+
+        #booking_option_container{
+            width: 28vw;
+            height: 28vw;
+
+            transform: translate(28vw, 64vw);
+        }
+
+        /*make the text more compressed vertically to accommodate this smaller space*/
+        #booking_option_container a{
+            font-size: 1.2vw;
+            padding: 1.2vw 0vw;
+        }
+
+        #wheat_icon{
+            width: 11vw;
+            transform: translate(-18vw, 12vw);
+        }
+
+        #confirm_button{
+            transform: translate(-28vw, 103vw);
+        }
+
+       #confirm_button a{
+           font-size: 1.4vw;
+       }
+
+
+
+       /*=====================FOOTER=================*/
+        footer{
+            font-size: 2vw;
+            padding: 1.2vw 7vw;
+        }
+
+        footer p{
+            margin: 0.6vw 0vw;
+            font-size: 1.6vw;
+        }
+
+        footer i{
+            font-size: 3.5vw;
+            padding-top: 0.4vw;
+        }
+   }
+   
+   @media only screen and (max-width: 768px) { 
+        a, p{
+            font-size: 1.2vw;
+        }
+
+        /*===================NAVIGATION====================*/
+        #home_button{
+            width: 11vw;
+            height: 11vw;
+            transform: translate(20vw, 15%);
+        }
+
+        .circle img{
+            width: 7.5vw;
+            height: 7.5vw;
+            margin-top: 1.4vw;
+        }
+        
+        .nav_menu{
+            height: 7.8vw;
+            /*min-height: 58px;*/
+            border-bottom-left-radius: 4.5vw;
+            border-bottom-right-radius: 4.5vw;
+        }
+
+        .nav_menu a{
+            margin: 2.8vw 1.2vw 0vh 2vw;
+        }
+
+        /*=====================HOME========================*/
+        #home .cover_img{
+            /*Stretch the cover image vertically so that the taller space is filled up*/
+            width: 126vw;
+            transform: translate(-38vw, 2vw);
+        }
+
+        /*Change sizing to view width and height instead of pixels to utilise various tablet sizes*/
+        .text_container{
+            padding: 1vw 2.5vw;
+            width: 25vw;
+            border-radius: 3.2vw;
+            height: fit-content;
+
+            transform: translate(0, 60vw);
+            right: 1.8vw;
+        }
+
+        .text_container .title{
+            padding-top: 2vw;
+            padding-right: 5vw;
+            font-size: 3.4vw;
+        }
+    
+        .text_container p{
+            font-size: 1.5vw;
+            padding-bottom: 2vw;
+        }
+   
+       /*===================BOOKING=====================*/
+        .form_container{
+            border-radius: 21vw;
+            height: 105vw;
+
+            transform: translate(-4%, 25vw);
+        }
+
+        .form_container .title{
+            margin-top: 15vw;
+            margin-left: 9%;
+        }
+
+        /*Enlarge the calendar container so the calendar itself does not appear too small on narrower screens*/
+        .calendar_container{
+            border-radius: 5.6vw;
+            width: 66vw;
+            height: 52vw;
+            
+            transform: translate(17vw, 10vw);   /*give it more space to the left*/
+        }
+
+        #calendar{
+            /*enlarge the calendar to help with readability*/
+            height: 80%;
+        }
+
+        .calendar_container .title{
+            transform: translate(-24vw, -1vw);
+        }
+
+        #right_arrow{
+            transform: translate(25vw, 2vw);
+        }
+
+        #left_arrow{
+            transform: translate(20vw, 2vw);
+        }
+
+        .booking_form{
+            width: 50vw;
+
+            margin-top: 40vw;   /*place it more below the calendar container to avoid overlapping*/
+            margin-left: 8%;
+        }
+
+        #booking_option_container{
+            width: 26vw;
+            height: 26vw;
+
+            transform: translate(29vw, 74vw);
+        }
+
+        #chicken_icon{
+            width: 8vw;
+            transform: translate(10vw, 15.5vw);
+        }
+
+        #wheat_icon{
+            transform: translate(-27vw, 17vw);
+        }
+
+        #confirm_button{
+            transform: translate(-28vw, 123vw);
+        }
+        
+   
+       /*=======================CONTACT======================*/
+       #contact .background{
+           width: 45vw;
+           transform: translate(-10vw, 26vw);
+       }
+   
+       .contact_info_container{
+           height: 80vw;
+           width: 68vw;         /*give it more horizontal space*/
+           border-radius: 5.8vw;
+   
+           transform: translate(-10vw, 15vw);     
+           text-align: center;  /*arrange texts in the centre rather than the left like before*/
+       }
+   
+       /*Adjust font size to view width instead of pixel to utilise various tablet sizes*/
+       .contact_info_container p, .contact_info_container a{
+           font-size: 1.6vw;
+           margin: 1px 0px;
+       }
+   
+       .contact_info_container .title{
+           font-size: 3.2vw;
+           padding: 2.4vh 0vw;
+       }
+   
+       .contact_info_container p{
+           padding-top: 0.3vh;
+       }
+   
+       #social_txt{
+           padding-top: 3.5vh;
+       }
+   
+       .contact_info_container i{
+           font-size: 4.5vw;
+           padding-top: 1vh;
+           padding-right: 1.2vw;
+       }
+   
+       .map{
+           width: 85vw;
+           border-radius: 2vw;
+           transform: translate(7vw, 70vw);     /*shift the map more down to the bottom*/
+       }
+   
+       .cow_icon{
+           width: 20vw;
+           transform: translate(30vw, 52vw);    /*place this icon on top the map instead of below like before*/
+       }   
+   }
+   
+   /* ===== MOBILE: Media queries for small mobile resolution. ===== */
+   @media only screen and (max-width: 640px) { 
+        section{
+            /*A reasonable minheight to give enough vertical space per section on a vertical display*/
+            min-height: 850px;
+        }
+
+
+        /*===================NAVIGATION=================*/
+        .nav_menu{
+            transform: translate(23vw, 0vh);
+            width: 42vw;
+            min-width: unset;
+
+            padding-left: 40px;
+            padding-right: 12px;
+            padding-bottom: 4.5px;
+        }
+
+        .nav_menu a{
+            font-size: 1.64vw;
+            margin: 3.4vw 1.1vw 0vw 1.8vw;
+        }
+
+
+        /*=====================HOME========================*/
+        #home .cover_img{
+            /*Stretch the cover image vertically so that the taller space is filled up*/
+            width: 142vw;
+            min-width: 322px;
+            transform: translate(-50vw, 2.8vw);
+        }
+        
+        .text_container{
+            width: 30vw;
+            transform: translate(0, 75vw);
+            right: 1.2vw;
+        }
+
+        .text_container .title{
+            font-size: 3.85vw;
+            padding-top: 3vw;
+            padding-bottom: 2vw;
+        }
+
+        .text_container p{
+            font-size: 1.92vw;
+            padding-bottom: 3vw;
+        }
+          
+        
+        /*====================ABOUT=========================*/
+        #about p, #about a{
+            font-size: 1.82vw;
+        }
+
+       .abt_img{
+           width: 74vw;
+           height: 74vw;
+           min-width: 300px;
+           transform: translate(0vw, 36.5vw);
+       }
+   
+       .abt_us_container{
+           width: 49vw;
+           height: 49vw;
+           transform: translate(-23vw, 15vw);   /*shift more towards the right to fit in narrower width*/
+       }
+
+       #about .abt_us_container .title{
+            padding-top: 6.6vw;
+        }
+
+       .abt_us_container p{
+           padding: 2vw 2.6vw;
+           padding-bottom: 1vw;
+       }
+   
+       .review_container{
+           width: 52vw;
+           transform: translate(22vw, 96vw);    /*shift more towards the left to fit in narrower width*/
+       }
+
+       .review_container p{
+           padding: 0.2vw 1.6vw;
+       }
+
+       #about .review_container .title{
+           font-size: 2.45vw;
+       }
+   
+       #about .icon{
+           width: 16vw;
+           height: 16vw;
+           transform: translate(23vw, 26.5vw);
+       }
+
+       /*===================GALLERY======================*/
+        #gallery .description_container{
+            border-top-left-radius: 11vw;
+            border-bottom-left-radius: 11vw;
+            height: 22vw;
+            width: 38vw;
+
+            transform: translate(1%, 10vw);
+        }
+
+        #gallery .icon{
+            transform: translate(2%, 28vw);
+        }
+
+        .description_container p{
+            padding: 0vw 3vw 0vh 3.6vw;
+            margin: 1vw 2vw;
+            font-size: 1.6vw;
+        }
+
+        .description_container .title{
+            padding-top: 2.4vw;
+            font-size: 3.5vw;
+        }
+
+        #gallery .circle a{
+            font-size: 1.77vw;
+        }
+
+        /*=================BOOKING=====================*/
+        #booking{
+            height: 180vw;  /*longer height since elements here are arranged more vertically in mobile form factor with narrower width*/
+        }
+
+        .form_container .title, .calendar_container .title, .calendar_container i{
+            font-size: 3.8vw;
+        }
+
+        .form_container{
+            height: 130vw;
+            border-radius: 17vw;
+            transform: translate(-3vw, 35vw);
+        }
+
+        .calendar_container{
+            width: 70vw;
+            height: 64vw;
+            border-radius: 6.2vw;
+            
+            transform: translate(14.5vw, 14vw);
+        }
+
+        #calendar{
+            width: 95%;
+            transform: translate(0, 8.5vw);
+        }
+
+        .booking_form{
+            width: 50vw;
+            transform: translate(0vw, 8vw);
+        }
+
+        .booking_form label, input[type=text], #confirm_button a{
+            font-size: 2.15vw;      /*larger text size than before to help with readability*/
+        }
+
+        .booking_form label{
+            padding-left: 1vw;
+        }
+
+        input[type=text]{
+            padding: 0.5vw 2vw;
+            margin-bottom: 3.6vw;
+            margin-top: 0.8vw;
+    
+            border-radius: 1.1vw;
+            height: 6vw;
+        }
+
+        #booking_option_container{
+            width: 33vw;
+            height: 33vw;
+            transform: translate(28vw, 90vw);
+        }
+
+        #booking_option_container a{
+            font-size: 1.5vw;
+            padding: 1.4vw 0vw;
+        }
+
+        #chicken_icon{
+            width: 10vw;
+            transform: translate(12vw, 20.5vw);
+        }
+
+        #wheat_icon{
+            height: 10vw;
+            transform: translate(-32vw, 27.5vw);
+        }
+
+        #confirm_button{
+            transform: translate(-28vw, 158vw);
+        }
+
+
+        /*==================CONTACT=====================*/
+        #contact{
+            height: 180vw;  /*longer height since elements here are arranged more vertically in mobile form factor with narrower width*/
+        }
+
+        #contact .background{
+            width: 45vw;
+            transform: translate(-10vw, 40vw);
+        }
+    
+        .contact_info_container{
+            height: 140vw;      /*make it taller to fill the longer vertical space of phone screens nicely*/
+            transform: translate(-10vw, 20vw);     
+        }
+    
+        .contact_info_container p, .contact_info_container a{
+            font-size: 1.95vw;
+            margin: unset;
+            padding: unset;
+        }
+
+        .contact_info_container .title{
+            font-size: 4.6vw;
+            padding: 3.2vw 0vw;
+        }
+    
+        .contact_info_container p{
+            padding: unset;
+            margin-bottom: -1vw;
+            margin-top: 2.5vw;
+        }
+    
+        #social_txt{
+            padding-top: 3.5vw;
+        }
+    
+        .contact_info_container i{
+            font-size: 4.5vw;
+            padding-top: 1.5vw;
+            padding-right: 1.2vw;
+        }
+    
+        .map{
+            transform: translate(8%, 93vw);
+        }
+    
+        .cow_icon{
+            transform: translate(135%, 74vw);
+        }
+
+
+
+        /*================ANIMATIONS===============*/
+        .calendar_container i:active{
+            font-size: 4.4vw;
+        }
+
+        .contact_info_container i:active{
+            font-size: 5vw;
+        }
+   }
+   
+   
+   @media only screen and (max-width: 360px) { 
+        section{
+            min-height: 600px;
+        }
+
+        /*===================NAVIGATION=================*/
+        .nav_menu{
+            width: 36vw;
+            padding-left: 32px;
+            padding-right: 8px;
+            padding-bottom: 3.5px;
+        }
+
+
+       /*================HOME===================*/
+        #home .cover_img{
+            min-width: 260px;
+        }
+
+        /*================ABOUT====================*/
+        .abt_img{
+            width: 76vw;
+            height: 76vw;
+            min-width: 200px;
+        }
+
+        /*=================BOOKING=================*/
+        input[type=text]{
+            padding: 0.4vw 1.8vw;
+            margin-bottom: 2vw;
+            margin-top: 0.2vw;
+        }
+
+
+        /*================CONTACT=================*/
+        .contact_info_container{
+            height: 145vw;
+        }
+    
+        .contact_info_container p, .contact_info_container a{
+            font-size: 2vw; /*larger text size than before to help with readability*/
+        }
+
+        .contact_info_container .title{
+            padding: 2vw 0vw;
+        }
+    
+        .contact_info_container p{
+            margin-bottom: -1vw;
+            margin-top: 2.8vw;
+        }
+    
+        #social_txt{
+            padding-top: 2.8vw;
+        }
+    
+        .map{
+            width: 88vw;
+            border-radius: 2.4vw;
+            transform: translate(5%, 98vw);
+        }
+    
+        .cow_icon{
+            transform: translate(138%, 79vw);
+        }
+   }
+   
+   
